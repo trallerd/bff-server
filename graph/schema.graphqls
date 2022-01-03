@@ -1,0 +1,19 @@
+type Image{
+    title: String!
+    comment: String
+    scr: String
+}
+
+type Category{
+    id: Int
+    name: String!
+}
+
+type Product{
+    id: Int
+    name: String!
+    price: Float
+    description: String
+    size: String
+    category: [Category]!
+}
