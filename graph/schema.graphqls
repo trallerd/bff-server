@@ -1,8 +1,3 @@
-type Image{
-    title: String!
-    comment: String
-    scr: String
-}
 
 type Category{
     id: Int
@@ -16,4 +11,40 @@ type Product{
     description: String
     size: String
     category: [Category]!
+}
+
+type Address{
+    id: Int
+    state: String
+    city: String
+    neighborhood: String
+    street: String
+    number: Int
+}
+
+type User{
+    id: Int
+    name: String
+    email: String
+    password: String
+    adm: Boolean
+    anddress: [Address]!
+}
+
+type Sell{
+    id: Int
+    discount: Float
+    total: Float
+    quantity: Int
+    date: String
+    user: [User]!
+}
+
+type Rental{
+    id: Int
+    rent: String
+    devolution: String
+    price: Float
+    product: [Product]!
+    user: [User]!
 }

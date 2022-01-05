@@ -1,0 +1,5 @@
+type ImageContract{
+   title: String!
+   comment: String
+   scr: String
+}
